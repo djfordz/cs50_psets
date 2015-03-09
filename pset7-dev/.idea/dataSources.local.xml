@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - pset7@localhost" uuid="5198a9e3-441d-4ca4-801a-6d31317bb852">
+      <secret-storage>master_key</secret-storage>
+      <user-name>djfordz</user-name>
+      <schema-pattern>pset7.*</schema-pattern>
+      <default-schemas>pset7.*</default-schemas>
+    </data-source>
+  </component>
+</project>

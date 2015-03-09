@@ -1,0 +1,28 @@
+*.[oa]
+*.~
+apps/
+Books/
+buffalotraders/
+build-pset4_qt-Desktop-Debug
+Camera\ Uploads
+computer-repair\ (1).png
+computer-repair.png
+CS50/
+CTU_Projects/
+hacker1/
+hackerearth_p1/
+Inkscape\ Projects/
+MattHomework/
+Misc/
+Pictures/
+projects/
+Resume_David_Ford.doc
+Shared\ Folder/
+sublime-text-3
+week1/
+*.png
+.dropbox
+GIMP\ Projects/
+etc/
+pset4_qt/
+*.zip

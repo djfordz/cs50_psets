@@ -1,0 +1,19 @@
+0.  BMP, JPG, PNG support over 16 million colors or 2^24 colors, while GIF only supports 256 colors.
+1.  From the given formats, the only one which can support animation is GIF.
+2.  Lossy compression discards cetain portions of the data determined not essential by an algorithm, while lossless compression preserves the original data while compressing it.
+3.  The only lossy-compressed file format from the given formats is JPEG.
+4.  On FAT file systems when a file is deleted by the OS, the file is not lost, the OS simply marks the location or clusters of the data as available or free, however the data is still present in those clusters until they are randomly overwritten though continous use of the system, however there is no guarantee they will ever be overwritten.
+5.  To truly delete data from a hard disk, the data must be overwritten this is done through the use of applications called disk sanitizers or through commands usch as linux' "dd".
+6.  stdint.h is a header file which defines several integer datatypes and a few macros.
+7.  The point of using the aforementioned datatypes is due to them being of a fixed length across all systems, thus writing programs with them enables the program to port easily to other systems.
+8.  a BYTE is 1 byte, a WORD is 2 bytes, a DWORD and LONG is 4 bytes.
+9.  The first two bytes of any BMP file must be "BM".
+10. The bfsize is the size of the entire bitmap file, while the biSize specifies the size of the BITMAPINFOHEADER.
+11. If byHeight is negative, it means the bmp file has its rows stored top to bottom instead of bottom to top.
+12. The field in NITMAPINFOHEADER which specifies the BMP's color depth is "biBitCount".
+13. fopen may return NULL if there is not enough memory available on the system, or user permissions are not set correctly.
+14. The third argument "fread" is always 1 due to only needing to read one structure at a time, as fread specifies the number of reads from a stream.
+15. if bi.biWidth is 3 then copy.c assigns a padding of 3 bytes.
+16. fseek changes the position in an opened file to where specified.
+17. SEEK_CUR is a constant value defined in stdio.h that defines fseek to seek from current location.
+18. The culprit is Milo Banana...I knew he was up to no good...
