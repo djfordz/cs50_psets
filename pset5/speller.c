@@ -131,7 +131,7 @@ int main(int argc, char* argv[])
             index = 0;
         }
     }
-
+    
     // check whether there was an error
     if (ferror(fp))
     {
