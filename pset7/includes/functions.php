@@ -9,7 +9,7 @@
      * Helper functions.
      */
 
-    require_once("constants.php");
+    require_once(__DIR__ . "/constants.php");
 
     /**
      * Apologizes to user with message.
@@ -26,7 +26,7 @@
      */
     function dump($variable)
     {
-        require("../templates/dump.php");
+        require(__DIR__ . "/../templates/dump.php");
         exit;
     }
 
@@ -197,19 +197,19 @@
     function render($template, $values = [])
     {
         // if template exists, render it
-        if (file_exists("../templates/$template"))
+        if (file_exists(__DIR__ . "/../templates/$template"))
         {
             // extract variables into local scope
             extract($values);
 
             // render header
-            require("../templates/header.php");
+            require(__DIR__ . "/../templates/header.php");
 
             // render template
-            require("../templates/$template");
+            require(__DIR__ . "/../templates/$template");
 
             // render footer
-            require("../templates/footer.php");
+            require(__DIR__  . "/../templates/footer.php");
         }
 
         // else err

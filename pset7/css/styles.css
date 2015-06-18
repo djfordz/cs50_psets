@@ -1,0 +1,128 @@
+/**
+ * styles.css
+ *
+ * Computer Science 50
+ * Problem Set 7
+ *
+ * Global CSS.
+ */
+@font-face {
+    font-family: Jacques-Francois-Shadow;
+    src: url(../fonts/JacquesFrancoisShadow-Regular.ttf);
+}
+@font-face {
+    font-family: Diplomata;
+    src: url(../fonts/DiplomataSC-Regular.ttf);
+}
+ body {
+    background-color: rgba(240, 240, 240, 0.7);
+ }
+ #masthead {
+    width: auto;
+    height: 120px;
+    margin-bottom: 10px;
+ }
+#masthead h1, #masthead a {
+    font-family: "Jacques-Francois-Shadow", "Diplomata", Sans-Serif;
+    font-size: 6rem;
+    color: rgba(88, 88, 88, 0.7);
+    text-shadow: 4px 4px 8px;
+    display: inline-block;
+}
+#masthead h1:nth-child(2), #masthead a:nth-child(2) {
+    color: green;
+}
+#masthead a, #masthead a:hover, #masthead a:visited {
+    text-decoration: none;
+}
+.container
+{
+    /* center contents */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.nav {
+    width: 70%;
+    height: 40px;
+    margin: 0.6em auto 0.8em auto;
+    padding: 5px;
+}
+.nav ul {
+    height: 25px;
+    list-style-type: none;
+}
+.nav ul li {
+    font-size: 1em;
+    width: 50px;
+    height: 25px;
+    display: inline-block;
+    margin: 0 15px 0 15px;
+}
+
+.nav ul li a {
+    text-decoration: underline;
+    color: rgba(48, 48, 48, 0.8);
+}
+.nav ul li a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav ul li a:visited {
+    color: rgba(88,88,88, 0.6);
+
+}
+.nav ul li:nth-child(6){
+    width: 100px;
+}
+.nav ul li:last-child {
+    width: 100px;
+    font-weight: bold;
+}
+.nav ul li:last-child a:hover {
+    font-weight: normal;
+}
+table {
+    margin: auto;
+    padding: 5px;
+
+}
+thead {
+    border-bottom: 2px solid #222;
+}
+th, td {
+    width: 20%;
+    font-size: 1em;
+    text-align: center;
+    padding: 5px;
+}
+#middle .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+#bottom
+{
+    /* shrink bottom's font size */
+    font-size: smaller;
+
+    /* surround with whitespace */
+    margin: 20px;
+}
+
+.quote ul {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.2rem;
+}
+.quote ul li h4 {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.quote ul li:first-child h4 {
+    font-variant: small-caps;
+}
